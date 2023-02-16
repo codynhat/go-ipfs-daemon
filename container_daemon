@@ -82,4 +82,7 @@ ipfs config --json Pubsub.Enabled true
 ipfs config algorithm "rsa"
 ipfs config --json Swarm.RelayClient.Enabled false
 
+# Peer with web3.storage
+ipfs config --json Peering.Peers "[{\"ID\": \"bafzbeibhqavlasjc7dvbiopygwncnrtvjd2xmryk5laib7zyjor6kf3avm\", \"Addrs\": [\"/dnsaddr/elastic.dag.house\"]}]"
+
 exec ipfs "$@"
