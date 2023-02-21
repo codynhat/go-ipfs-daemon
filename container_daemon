@@ -80,7 +80,7 @@ ipfs config --json Addresses.Swarm "[\"/ip4/0.0.0.0/tcp/$IPFS_SWARM_TCP_PORT\", 
 #   ipfs config --json Addresses.Announce "[\"$IPFS_ANNOUNCE_ADDRESS_LIST\"]"
 # fi
 ipfs config --json Pubsub.Enabled true
-ipfs config algorithm "rsa"
+ipfs config algorithm "ed25519"
 ipfs config --json Swarm.RelayClient.Enabled false
 
 # Peer with web3.storage
