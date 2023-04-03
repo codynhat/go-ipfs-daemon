@@ -91,4 +91,6 @@ BOOTSTRAP_PEERS='[
 ipfs config --json Peering.Peers "${BOOTSTRAP_PEERS}"
 ipfs config --json API.HTTPHeaders.Access-Control-Allow-Origin '["*"]'
 
+ipfs config Swarm.ResourceMgr.MaxMemory "$IPFS_SWARM_MAX_MEMORY"
+
 exec ipfs "$@"
